@@ -12,7 +12,7 @@ Tiene una breve descripción de la empresa y su trayectoria.
 
 ## Contributing
 
-Wuillian Cardozo Wuillianleo@gmail.com
-Ignacio Lide Gomez nacho.key12@gmail.com
-Nicolas Ezequiel Terrazas ceniet@hotmail.com
-Ariel Hidetoshi Miyahira arielmiyahira@gmail.com
+- Wuillian Cardozo Wuillianleo@gmail.com
+- Ignacio Lide Gomez nacho.key12@gmail.com
+- Nicolas Ezequiel Terrazas ceniet@hotmail.com
+- Ariel Hidetoshi Miyahira arielmiyahira@gmail.com
