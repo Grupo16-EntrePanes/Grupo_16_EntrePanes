@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(250, 244, 235);
+    margin: 0%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+    color: rgb(255, 166, 0);
+}
+
+h4 {
+    font-size: 30px;
+    color: rgb(255, 166, 0);
+}
+
+.informacion {
+    font-weight: bold;
+}
+
+button {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 2px 5px;
+    box-shadow: 1px 1px 5px;
+    border-radius: 8px;
+    color: black;
+    background-color: rgb(255, 142, 97);
+}
+
+button:hover {
+    background-color: rgb(243, 108, 54);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: rgb(243, 108, 54);
+}
+
+#parte1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    margin: 5px 0px;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/Imagenes/pexels-valeria-boltneva-1639557.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Promos-dia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#Promos-dia .img-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/Imagenes/pexels-jonathan-borba-2983103.jpg);
+    background-repeat: no-repeat;
+            background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 100%;
+}
+
+#Promos-dia .texto {
+    display: flex;
+}
+
+#Promos-dia p{
+    font-size: 20px;
+    margin-top: 25px;
+    color: black;
+}
+
+#Promos-dia h2 {
+    color: black;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 320px;
+    padding: 40px;
+}
+
+#final h4{
+    font-size: 20px;
+}
+
+footer {
+    margin: 0%;
+    font-size: 15px;
+    color: gray;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #Promos-dia .img-container{
+        width: 50%;
+    }
+
+    #Promos-dia .container{
+        flex-direction: row;
+        padding-top: 20px;
+    }
+
+    #Promos-dia .texto{
+        flex-direction: column;
+        margin: 60px;
+        
+    }
+
+    #Promos-dia h2{
+        font-size: 50px;
+        font-style: oblique;
+    }
+
+    #Promos-dia p{
+        font-size: 30px;
+        font-style: oblique;
+    }
+
+    #final .Cajadeinfo{
+        justify-content: space-between;
+    }
+}
