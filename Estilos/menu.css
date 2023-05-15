@@ -1,26 +1,134 @@
-.contenedor-padre{
-    display: flex;
-    flex-direction: row;
-    background-color: orange;
-    justify-content: space-around;
-    align-items: flex-start;
+*{
+    box-sizing: border-box;
 }
 
-.contenedor-hijo{
+button {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 2px 5px;
+    box-shadow: 1px 1px 5px;
+    border-radius: 8px;
     color: black;
-    height: 50px;
-    border: 10px;
-    width: 300px;
-    align-items: flex-start;
-    text-decoration: underline;
+    background-color: rgb(255, 142, 97);
 }
 
-.carrito{
-    height: 50px;
-    align-items: flex-end;
-    width: 50px;
+button:hover {
+    background-color: rgb(243, 108, 54);
 }
-.logo{
-    height: 50px;
-    width: 50px;
+
+header {
+    background-color: rgb(245, 245, 245);
 }
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: rgb(243, 108, 54);
+}
+
+
+#sanguches .imagenes {
+    margin: 5px;
+    border: 1px solid #0f0f0f;
+    float: none;
+    width: 100%;
+    
+}
+
+#sanguches.imagenes:hover {
+    border: 1px solid #777;
+}
+
+#sanguches .imagenes img {
+    width: 100%;
+    height: 300px;
+}
+
+div.descripcion {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 320px;
+    padding: 40px;
+}
+
+#final h4 {
+    font-size: 20px;
+}
+
+footer {
+    margin: 0%;
+    font-size: 15px;
+    color: gray;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    .espacioenblanco{
+        height: 90px;
+    }
+
+    #sanguches .imagenes{
+        width: 24.20%;
+        float: left;
+    }
+
+}
+
