@@ -1,22 +1,140 @@
-.contenedor-padre{
-    display: flex;
-    flex-direction: row;
-    background-color: orange;
-    justify-content: space-around;
-    align-items: flex-start;
+* {
+    box-sizing: border-box;
 }
 
-.contenedor-hijo{
+body {
+    background-color: rgb(250, 244, 235);
+    margin: 0%;
+}
+
+button {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 2px 5px;
+    box-shadow: 1px 1px 5px;
+    border-radius: 8px;
     color: black;
-    height: 50px;
-    border: 10px;
-    width: 300px;
-    align-items: flex-start;
-    text-decoration: underline;
+    background-color: rgb(255, 142, 97);
 }
 
-.carrito{
-    height: 50px;
-    align-items: flex-end;
-    width: 50px;
+button:hover {
+    background-color: rgb(243, 108, 54);
+}
+h1{
+    font-style: oblique;
+    font-size: 50px;
+    color: rgb(68, 209, 68);
+}
+.ig{
+    color: blueviolet;
+}
+
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: rgb(243, 108, 54);
+}
+
+#informacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#informacion button{
+    background-color: rgb(68, 209, 68);
+    border-color: white;
+}
+#informacion img{
+    width: auto;
+    height: 35px;
+    
+}
+#informacion a{
+    font-style: oblique;
+}
+
+#informacion .insta{
+    background-color: blueviolet;
+}
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 320px;
+    padding: 40px;
+}
+
+#final h4{
+    font-size: 20px;
+}
+
+footer {
+    margin: 0%;
+    font-size: 15px;
+    color: gray;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:720px){
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #final .Cajadeinfo{
+        justify-content: space-between;
+    }
+
+    .espacio{
+        height: 100px;
+    }
 }
